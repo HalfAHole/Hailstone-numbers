@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(void) {
+unsigned long long int d=0, a=0;
+printf("Generates hailstone numbers.\nStart number: "); scanf("%llu", &d);
+while (d>1) {
+if (d%2==0) {a++; d=d/2;printf("%llu %llu\n",a, d);}
+if (d==1) {break;}
+if (d%2!=0) {a++; d=(d*3)+1;printf("%llu %llu\n",a, d);} }
+return (0);}
